@@ -272,7 +272,6 @@ jobs:
           path: build\${{env.ARTIFACT_NAME}}
 
       - name: Upload installer
-        if: ${{matrix.build_type == 'release' && (github.ref_type == 'tag' || github.ref_name == 'dev')}}
         uses: actions/upload-artifact@v2
         with:
           name: ${{env.ARTIFACT_NAME}}.exe
@@ -309,7 +308,6 @@ jobs:
 
       - name: Publish installer
         uses: softprops/action-gh-release@v1
-        if: ${{matrix.build_type == 'release' && (github.ref_type == 'tag' || github.ref_name == 'dev')}}
         with:
           tag_name: nightly-github-actions
           files: build/${{env.PUBLISH_NAME}}.exe
