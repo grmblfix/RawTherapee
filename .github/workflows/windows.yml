@@ -185,6 +185,8 @@ jobs:
             "libxml2-2.dll" \
             "libzstd.dll" \
             "zlib1.dll" \
+            "libcrypto-1_1-x64.dll" \
+            "libexiv2.dll" \
             "$BUILD_DIR"
           cd -
 
