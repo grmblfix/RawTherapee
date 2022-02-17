@@ -45,6 +45,7 @@ jobs:
             mingw-w64-x86_64-lensfun
             mingw-w64-x86_64-libiptcdata
             mingw-w64-x86_64-exiv2
+            mingw-w64-x86_64-curl
 
       - name: Configure build
         run: |
@@ -187,6 +188,7 @@ jobs:
             "zlib1.dll" \
             "libcrypto-1_1-x64.dll" \
             "libexiv2.dll" \
+            "libcurl-4.dll" \
             "$BUILD_DIR"
           cd -
 
