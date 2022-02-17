@@ -184,6 +184,7 @@ jobs:
             "libxml2-2.dll" \
             "libzstd.dll" \
             "zlib1.dll" \
+            "lib*.dll" \
             "$BUILD_DIR"
           cd -
 
