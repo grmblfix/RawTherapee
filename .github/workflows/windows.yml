@@ -120,6 +120,7 @@ jobs:
           echo "Copying DLLs and EXEs."
 
           cd ./bin
+          dir
           cp \
             "gdbus.exe" \
             "gspawn-win64-helper.exe" \
@@ -184,7 +185,6 @@ jobs:
             "libxml2-2.dll" \
             "libzstd.dll" \
             "zlib1.dll" \
-            "lib*.dll" \
             "$BUILD_DIR"
           cd -
 
