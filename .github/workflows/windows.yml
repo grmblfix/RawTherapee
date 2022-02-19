@@ -193,6 +193,8 @@ jobs:
             "libnghttp2-14.dll" \
             "libpsl-5.dll" \
             "libssh2-1.dll" \
+            "libssl-1_1-x64.dll" \
+            "libunistring-2.dll" \
             "$BUILD_DIR"
           cd -
 
